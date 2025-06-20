@@ -1,2 +1,2 @@
 # Resavor
-Gerenciador de despesas e contas
+Gerenciador de Despesas e Contas
