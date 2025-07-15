@@ -119,3 +119,21 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.carousel-card {
+  background: linear-gradient(to bottom, #616161, #2f2f2f, #171717);
+  border-radius: 10px;
+  height: 150px;
+  max-width: 230px; 
+  border-width: 1px;
+  border-color: #4a4a4a;
+}

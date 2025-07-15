@@ -20,10 +20,9 @@ export function NavLink({ href, label }: NavLinkProps) {
   const isActive = pathname === href
 
   return (
-    <a
-      href={href}
-      className={` flex-1 px-2 rounded-[5px] hover:cursor-pointer
-        ${isActive ? 'bg-white text-black font-semibold' : ''}`}
+    <a href={href}
+      className={` px-2 py-[1px] rounded-[5px] hover:cursor-pointer hover:bg-[#00000038]
+        ${isActive ? 'bg-white text-black font-semibold hover:bg-[#C7C7C7]' : ''}`}
     >
       {label}
     </a>
@@ -39,8 +38,8 @@ export function NavLinkDropDawn({ href, label }: NavLinkProps) {
   return (
 
     <a href={href}
-      className={` text-[16px] flex w-[full] my-[2px] center h-[40px] items-center pl-2 rounded-[5px] cursor-pointer hover:bg-white 
-        ${isActive ? 'bg-white text-black' : 'text-white hover:text-black'}`}
+      className={` text-[16px] flex w-[full] my-[2px] center h-[40px] items-center pl-2 rounded-[5px] cursor-pointer  
+        ${isActive ? 'bg-[#C7C7C7] text-black hover:bg-white' : 'text-white hover:text-black hover:bg-white'}`}
     >
       {label}
     </a>
@@ -55,7 +54,7 @@ export function NavGeneric({ children }: NavGenericProps) {
 
   return (
     <div className={` rounded-[5px] hover:cursor-pointer
-        ${isActive ? 'bg-white text-black font-semibold' : ''}`}
+        ${isActive ? 'bg-white text-black font-semibold ' : ''}`}
     >
       {children}
     </div>

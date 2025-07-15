@@ -13,11 +13,11 @@ export function Navbar() {
     const [value, setValue] = useState<number>(5000)
 
     return (
-        <div className="bg-gradient-to-r from-[#2c0ce485] via-[#a92af3ab] to-[#ff02c8a9] w-[98%] h-[90px] fixed top-3 inset-x-0 mx-auto rounded-[10px] flex">
+        <div className="bg-gradient-to-r from-[#2d2d2d] via-[#1d1d1d] to-[#171717] w-[98%] h-[90px] fixed top-3 inset-x-0 mx-auto rounded-[10px] flex">
             <div className="flex-1 w-[100%] h-[100%] flex items-center gap-5 pl-5 text-[18px]">
-                <div className="hover:bg-[#00000038] p-[3px] rounded-[5px]">
+                
                     <NavLink href="/" label="Visão Geral" />
-                </div>
+                
                 <DropDownMenu />
             </div>
 
